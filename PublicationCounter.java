@@ -22,7 +22,8 @@ public class PublicationCounter{
 		boolean bVolume = false;
 		boolean bUrl = false;
 		boolean bEe = false;
-		try {
+		try 
+		{
 			XMLInputFactory factory = XMLInputFactory.newInstance();
 			factory.setProperty("javax.xml.stream.isCoalescing",true);
 			XMLEventReader eventReader = factory.createXMLEventReader(new FileReader(filename));
@@ -236,7 +237,7 @@ public class PublicationCounter{
 		}
 	}
 }
-
+//This is a counter
 class CountingContainer{
 	private Record record;
 	private int count;
